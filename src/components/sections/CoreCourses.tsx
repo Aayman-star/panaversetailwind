@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Wrapper from "../shared/Wrapper";
 import {
@@ -8,6 +9,7 @@ import {
   CardDescription,
   CardFooter,
 } from "../ui/card";
+import { RevealList } from "next-reveal";
 
 const CoreCourses = () => {
   return (
@@ -23,7 +25,11 @@ const CoreCourses = () => {
             </CardDescription>
           </CardHeader>
         </Card>
-        <div className="grid grid-cols-3 gap-x-2">
+
+        <RevealList
+          interval={60}
+          duration={500}
+          className="grid grid-cols-3 gap-x-2">
           <Card className="border border-heroblue font-Poppins grid place-content-center">
             <CardHeader>
               <CardTitle className="text-heroblue text-center font-medium">
@@ -63,7 +69,7 @@ const CoreCourses = () => {
               </p>
             </CardContent>
           </Card>
-        </div>
+        </RevealList>
       </section>
     </Wrapper>
   );

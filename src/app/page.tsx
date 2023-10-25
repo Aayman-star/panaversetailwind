@@ -2,6 +2,7 @@ import Hero from "@/components/sections/Hero";
 import Intro from "@/components/sections/Intro";
 import Program from "@/components/sections/Program";
 import CoreCourses from "@/components/sections/CoreCourses";
+import Future from "@/components/sections/Future";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Intro />
       <Program />
       <CoreCourses />
+      <Future />
     </>
   );
 }
