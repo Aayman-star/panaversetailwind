@@ -3,9 +3,9 @@ import Image from "next/image";
 import studyimage from "/public/pgstudies-image1.png";
 const Program = () => {
   return (
-    <section>
-      <Wrapper>
-        {/* Main div */}
+    <Wrapper>
+      {/* Main div */}
+      <section className="max-w-7xl mx-auto">
         <div className="flex flex-col-reverse md:flex-row items-center">
           {/* Image here */}
           <div>
@@ -29,8 +29,8 @@ const Program = () => {
             </p>
           </div>
         </div>
-      </Wrapper>
-    </section>
+      </section>
+    </Wrapper>
   );
 };
 

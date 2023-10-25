@@ -4,9 +4,9 @@ import introimage from "/public/intro-image1.png";
 
 const Intro = () => {
   return (
-    <section>
-      <Wrapper>
-        {/* Main div housing the image and the text */}
+    <Wrapper>
+      {/* Main div housing the image and the text */}
+      <section className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between">
           {/* Text will bw placed in this div */}
           <div className="flex-1 font-Poppins py-6">
@@ -30,8 +30,8 @@ const Intro = () => {
             <Image src={introimage} alt="Introduction to metaverse" />
           </div>
         </div>
-      </Wrapper>
-    </section>
+      </section>
+    </Wrapper>
   );
 };
 
