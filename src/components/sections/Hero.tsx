@@ -31,7 +31,7 @@ const Hero = () => {
                 </p>
                 <RevealWrapper delay={1500} duration={1000}>
                   <div className="mt-4">
-                    <button className="px-8  py-4 md:px-10  rounded border-solid border-2 bg-heroblue shadow-md">
+                    <button className=" bg-heroblue px-8 py-4 md:px-10  rounded border-solid border-2 shadow-md">
                       Join Today
                     </button>
                   </div>

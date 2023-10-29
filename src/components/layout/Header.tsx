@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "/public/logo.png";
 import Logo1 from "/public/logo1.png";
 import Image from "next/image";
+import LGheader from "/public/logo-header.png";
 import Wrapper from "../shared/Wrapper";
 const Header = () => {
   return (
@@ -11,13 +12,16 @@ const Header = () => {
           {/* Logo */}
           <div className="-ml-10">
             {/* <h2 className="text-xl font-bold font-Poppins">Panaverse Dao</h2> */}
-            <Link href={"/"}>
+            {/* <Link href={"/"}>
               <Image
                 src="/logo1.png"
                 width={100}
-                height={100}
+                height={200}
                 alt="panaverse-logo"
               />
+            </Link> */}
+            <Link href={"/"}>
+              <Image src={LGheader} alt="logo" />
             </Link>
           </div>
 

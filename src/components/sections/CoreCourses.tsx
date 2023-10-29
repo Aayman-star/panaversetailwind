@@ -31,7 +31,7 @@ const CoreCourses = () => {
           duration={500}
           origin={"left"}
           className="p-2 grid grid-cols-1 gap-2 md:grid-cols-3 gap-x-2">
-          <Card className="border border-heroblue font-Poppins grid place-content-center">
+          <Card className="border border-[#EE1938] font-Poppins grid place-content-center">
             <CardHeader>
               <CardTitle className="text-heroblue text-center font-medium">
                 Quarter-I
@@ -44,7 +44,7 @@ const CoreCourses = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-heroblue font-Poppins grid place-content-center">
+          <Card className="border border-[#EE1938] font-Poppins grid place-content-center">
             <CardHeader>
               <CardTitle className="text-heroblue text-center font-medium">
                 Quarter-II
@@ -59,7 +59,7 @@ const CoreCourses = () => {
             </CardContent>
           </Card>
 
-          <Card className="border border-heroblue font-Poppins grid place-content-center">
+          <Card className="border border-[#EE1938] font-Poppins grid place-content-center">
             <CardHeader>
               <CardTitle className="text-heroblue text-center font-medium">
                 Quarter-III

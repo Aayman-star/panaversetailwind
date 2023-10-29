@@ -35,9 +35,9 @@ const Footer = () => {
   return (
     <Wrapper>
       <section className="bg-heroblue p-2">
-        <div className="max-w-7xl text-gray-50 mx-auto p-4 grid grid-cols-1 gap-y-6 items-start md:grid-cols-4 md:gap-5 md:items-center">
+        <div className="max-w-7xl text-gray-50 mx-auto p-4 grid grid-cols-1 gap-y-6  md:grid-cols-3 md:gap-5">
           {/* div containing the logo and content */}
-          <div className="flex-1 md:p-2 ">
+          <div className=" md:p-2 ">
             <div className="flex flex-col items-start">
               <div className="-ml-18">
                 <Image
@@ -72,9 +72,9 @@ const Footer = () => {
           </div>
 
           {/* div containig the menus */}
-          <div className="flex-1 flex flex-col items-start gap-y-6 md:flex-row md:items-stretch justify-evenly">
+          <div className=" mt-10 md:col-span-2 grid grid-cols-1 place-content-baseline gap-y-6 md:grid-cols-3  justify-between">
             {/* Contacts div */}
-            <div className="flex flex-col gap-3">
+            <div className=" flex flex-col gap-3 md:col-span-1">
               <h4 className="font-semibold text-lg">Home</h4>
               <ul>
                 {about.map((item, i) => (
@@ -85,7 +85,7 @@ const Footer = () => {
               </ul>
             </div>
             {/* Socials */}
-            <div className="flex flex-col  items-start md:items-center gap-y-4">
+            <div className=" flex flex-col  items-start  gap-y-4 md:col-span-1">
               <h3 className="text-[#EE1938] text-lg font-semibold">
                 Follow Us
               </h3>
@@ -98,10 +98,28 @@ const Footer = () => {
               </ul>
             </div>
             {/* Subscription */}
-            <div>
-              <input type="text" placeholder="Subscribe" />
+            <div className="grid grid-cols-1 gap-y-3 justify-items-start md:col-span-1">
+              <h3 className="font-semibold text-[#EE1938]">Subscribe</h3>
+              <div>
+                <input
+                  className="w-full h-10 rounded-md border border-gray-500"
+                  type="text"
+                  placeholder="Subscribe"
+                />
+              </div>
+              <div>
+                <button className="bg-[#EE1938] text-gray-50 px-3 py-2 rounded-md">
+                  Subscribe
+                </button>
+              </div>
             </div>
           </div>
+        </div>
+        <div className="h-10">
+          <hr />
+          <p className="text-gray-50 text-center p-2">
+            &copy;2023 Panaverse Dao. All rights reserved.
+          </p>
         </div>
       </section>
     </Wrapper>
