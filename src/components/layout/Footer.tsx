@@ -1,7 +1,19 @@
 import React from "react";
 import Wrapper from "../shared/Wrapper";
 import Logo from "/public/logo.png";
+import Logo1 from "/public/logo-footer.png";
 import Image from "next/image";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaLinkedin,
+  FaGithubSquare,
+  FaYoutube,
+  FaYoutubeSquare,
+} from "react-icons/fa";
+import { FaSquareXTwitter } from "react-icons/fa6";
+import { link } from "fs";
 
 const Footer = () => {
   const courses: Array<string> = [
@@ -12,49 +24,58 @@ const Footer = () => {
     "Genomics and BioInformatics",
     "Network Programmability and automation",
   ];
-  const about: Array<string> = ["Faculty", "Details", "Contact"];
+  const socials: Array<any> = [
+    <FaFacebookSquare />,
+    <FaLinkedin />,
+    <FaSquareXTwitter />,
+    <FaGithubSquare />,
+    <FaYoutubeSquare />,
+  ];
+  const about: Array<string> = ["About", "Courses", "Contact"];
   return (
     <Wrapper>
-      <section className="bg-blue-100 p-2">
-        <div className="max-w-7xl mx-auto p-4 flex flex-col items-start md:flex-row md:items-center justify-between">
+      <section className="bg-heroblue p-2">
+        <div className="max-w-7xl text-gray-50 mx-auto p-4 grid grid-cols-1 gap-y-6 items-start md:grid-cols-4 md:gap-5 md:items-center">
           {/* div containing the logo and content */}
           <div className="flex-1 md:p-2 ">
             <div className="flex flex-col items-start">
-              <div className="-ml-20">
+              <div className="-ml-18">
                 <Image
-                  src={Logo}
-                  width={300}
-                  height={350}
+                  src="/logo-footer.png"
+                  width={150}
+                  height={100}
                   alt="panaverse-logo"
                 />
               </div>
 
-              <div className=" md:p-6 md:-ml-4">
+              <div className="mt-2 mb-3 md:p-6 md:-ml-4">
                 <p>
                   Certified Web 3.0 and Metaverse Developer A One and Quarter
                   Years Panaverse DAO Earn as you Learn Program Getting Ready
                   for the Next Generation of the Internet
                 </p>
               </div>
+              {/* Experimental div */}
+              <div className="flex flex-col gap-y-2">
+                <div className="flex items-center  gap-x-2">
+                  <FaLocationDot className="h-4 w-4 text-[#EE1938]" />
+                  <p className="text-sm">
+                    Plot 245/2 M, PECHS Block 6, Karachi
+                  </p>
+                </div>
+                <div className="flex items-center  gap-x-2">
+                  <FaWhatsapp className="h-4 w-4 text-[#EE1938]" />
+                  <p className="text-sm">0308-2220203</p>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* div containig the menus */}
-          <div className="flex-1 flex flex-col md:flex-row items-stretch justify-evenly">
-            {/* Courses div */}
-            <div className="flex flex-col gap-3">
-              <h4 className="font-semibold text-lg">Courses</h4>
-              <ul>
-                {courses.map((course, i) => (
-                  <li key={i} className="mb-2">
-                    {course}
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="flex-1 flex flex-col items-start gap-y-6 md:flex-row md:items-stretch justify-evenly">
             {/* Contacts div */}
             <div className="flex flex-col gap-3">
-              <h4 className="font-semibold text-lg">About</h4>
+              <h4 className="font-semibold text-lg">Home</h4>
               <ul>
                 {about.map((item, i) => (
                   <li key={i} className="mb-2">
@@ -62,6 +83,23 @@ const Footer = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+            {/* Socials */}
+            <div className="flex flex-col  items-start md:items-center gap-y-4">
+              <h3 className="text-[#EE1938] text-lg font-semibold">
+                Follow Us
+              </h3>
+              <ul className="flex items-center">
+                {socials.map((icon, i) => (
+                  <li className="h-8 w-8 text-[#EE1938]" key={i}>
+                    {icon}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            {/* Subscription */}
+            <div>
+              <input type="text" placeholder="Subscribe" />
             </div>
           </div>
         </div>
@@ -71,3 +109,19 @@ const Footer = () => {
 };
 
 export default Footer;
+
+{
+  /* Courses div */
+}
+{
+  /* <div className="flex flex-col gap-3">
+              <h4 className="font-semibold text-lg">Courses</h4>
+              <ul>
+                {courses.map((course, i) => (
+                  <li key={i} className="mb-2">
+                    {course}
+                  </li>
+                ))}
+              </ul>
+            </div> */
+}

@@ -8,7 +8,7 @@ const Program = () => {
     <Wrapper>
       {/* Main div */}
       <section className="max-w-7xl mx-auto">
-        <div className="flex flex-col-reverse md:flex-row items-center">
+        <div className="p-2 flex flex-col-reverse md:p-0 md:flex-row items-center">
           {/* Image here */}
           <RevealWrapper origin={"left"}>
             <div>

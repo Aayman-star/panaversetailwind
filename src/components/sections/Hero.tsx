@@ -29,7 +29,7 @@ const Hero = () => {
                 <p className="mt-4 text-md">
                   The Next generation of internet is here!
                 </p>
-                <RevealWrapper delay={1500} duration={1000} origin={"left"}>
+                <RevealWrapper delay={1500} duration={1000}>
                   <div className="mt-4">
                     <button className="px-8  py-4 md:px-10  rounded border-solid border-2 bg-heroblue shadow-md">
                       Join Today

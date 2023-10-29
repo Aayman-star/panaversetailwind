@@ -9,7 +9,7 @@ const Intro = () => {
     <Wrapper>
       {/* Main div housing the image and the text */}
       <section className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between">
+        <div className="p-2 flex flex-col md:p-0 md:flex-row justify-between">
           {/* Text will bw placed in this div */}
           <div className="flex-1 font-Poppins py-6">
             <RevealWrapper origin={"left"} delay={500} duration={700}>

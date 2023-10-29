@@ -7,7 +7,7 @@ const Future = () => {
   return (
     <Wrapper>
       <section className="max-w-7xl mx-auto mt-10 mb-10">
-        <div className="grid grid-cols-2">
+        <div className="p-2 grid grid-cols-1 md:p-0 md:grid-cols-2">
           <div className="p-2 grid place-content-center gap-y-2">
             <h3 className="font-semibold text-lg text-heroblue font-Poppins text-center">
               Change your Future

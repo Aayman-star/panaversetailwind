@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Logo from "/public/logo.png";
+import Logo1 from "/public/logo1.png";
 import Image from "next/image";
 import Wrapper from "../shared/Wrapper";
 const Header = () => {
@@ -12,9 +13,9 @@ const Header = () => {
             {/* <h2 className="text-xl font-bold font-Poppins">Panaverse Dao</h2> */}
             <Link href={"/"}>
               <Image
-                src="/logo.png"
-                width={250}
-                height={200}
+                src="/logo1.png"
+                width={100}
+                height={100}
                 alt="panaverse-logo"
               />
             </Link>
