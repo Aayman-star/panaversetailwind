@@ -10,7 +10,7 @@ const Header = () => {
       <div className="w-full bg-heroblue">
         <header className="max-w-7xl mx-auto flex justify-between items-center p-4 bg-heroblue sticky top-0 z-10">
           {/* Logo */}
-          <div className="-ml-10">
+          <div className="md:-ml-10 ">
             {/* <h2 className="text-xl font-bold font-Poppins">Panaverse Dao</h2> */}
             {/* <Link href={"/"}>
               <Image
