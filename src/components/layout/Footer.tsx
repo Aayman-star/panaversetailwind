@@ -16,14 +16,14 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 import { link } from "fs";
 
 const Footer = () => {
-  const courses: Array<string> = [
-    "Web 3.0 and BlockChain",
-    "Artificial Intelligence",
-    "Cloud-native Computing",
-    "Ambient Computing and IoT",
-    "Genomics and BioInformatics",
-    "Network Programmability and automation",
-  ];
+  // const courses: Array<string> = [
+  //   "Web 3.0 and BlockChain",
+  //   "Artificial Intelligence",
+  //   "Cloud-native Computing",
+  //   "Ambient Computing and IoT",
+  //   "Genomics and BioInformatics",
+  //   "Network Programmability and automation",
+  // ];
   const socials: Array<any> = [
     <FaFacebookSquare />,
     <FaLinkedin />,
