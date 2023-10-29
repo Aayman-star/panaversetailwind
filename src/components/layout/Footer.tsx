@@ -91,7 +91,7 @@ const Footer = () => {
               </h3>
               <ul className="flex items-center">
                 {socials.map((icon, i) => (
-                  <li className="h-8 w-8 text-[#EE1938]" key={i}>
+                  <li key={i} className="h-8 w-8 text-[#EE1938]">
                     {icon}
                   </li>
                 ))}
