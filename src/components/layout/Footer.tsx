@@ -25,11 +25,11 @@ const Footer = () => {
   //   "Network Programmability and automation",
   // ];
   const socials: Array<any> = [
-    <FaFacebookSquare />,
-    <FaLinkedin />,
-    <FaSquareXTwitter />,
-    <FaGithubSquare />,
-    <FaYoutubeSquare />,
+    <FaFacebookSquare key={1} />,
+    <FaLinkedin key={2} />,
+    <FaSquareXTwitter key={3} />,
+    <FaGithubSquare key={4} />,
+    <FaYoutubeSquare key={5} />,
   ];
   const about: Array<string> = ["About", "Courses", "Contact"];
   return (
@@ -78,7 +78,7 @@ const Footer = () => {
               <h4 className="font-semibold text-lg">Home</h4>
               <ul>
                 {about.map((item, i) => (
-                  <li key={item} className="mb-2">
+                  <li key={i} className="mb-2">
                     {item}
                   </li>
                 ))}
@@ -90,9 +90,9 @@ const Footer = () => {
                 Follow Us
               </h3>
               <ul className="flex items-center">
-                {socials.map((icon, i) => (
-                  <li key={icon} className="h-8 w-8 text-[#EE1938]">
-                    {icon}
+                {socials.map((item, i) => (
+                  <li key={item.key} className="h-8 w-8 text-[#EE1938]">
+                    {item}
                   </li>
                 ))}
               </ul>
