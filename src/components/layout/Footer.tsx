@@ -102,7 +102,7 @@ const Footer = () => {
               <h3 className="font-semibold text-brandred text-lg">Subscribe</h3>
               <div>
                 <input
-                  className="w-full p-2 h-10 rounded-md border border-gray-500"
+                  className="w-full p-2 h-10 rounded-md border border-gray-500 text-slate-800"
                   type="text"
                   placeholder="Email Here"
                 />

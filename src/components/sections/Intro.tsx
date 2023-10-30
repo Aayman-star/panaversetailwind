@@ -12,7 +12,11 @@ const Intro = () => {
         <div className="p-2 flex flex-col md:p-0 md:flex-row justify-between">
           {/* Text will bw placed in this div */}
           <div className="flex-1 font-Poppins py-6">
-            <RevealWrapper origin={"left"} delay={500} duration={700}>
+            <RevealWrapper
+              origin={"left"}
+              reset={true}
+              delay={500}
+              duration={700}>
               <div className="flex flex-col space-y-3 items-center mt-12">
                 <h2 className="font-bold text-3xl text-heroblue">
                   What is Metaverse
@@ -30,7 +34,11 @@ const Intro = () => {
             </RevealWrapper>
           </div>
           {/* Image will be placed in this div */}
-          <RevealWrapper origin={"right"} delay={500} duration={700}>
+          <RevealWrapper
+            origin={"right"}
+            reset={true}
+            delay={500}
+            duration={700}>
             <div>
               <Image src={introimage} alt="Introduction to metaverse" />
             </div>

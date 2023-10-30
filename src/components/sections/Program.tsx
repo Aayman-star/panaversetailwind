@@ -10,7 +10,7 @@ const Program = () => {
       <section className="max-w-7xl mx-auto">
         <div className="p-2 flex flex-col-reverse md:p-0 md:flex-row items-center">
           {/* Image here */}
-          <RevealWrapper origin={"left"}>
+          <RevealWrapper origin={"left"} reset={true}>
             <div>
               <Image src={studyimage} alt="a boy studying" />
             </div>
@@ -18,7 +18,7 @@ const Program = () => {
           {/* text here */}
 
           <div className="flex-1 font-Poppins">
-            <RevealWrapper origin={"right"}>
+            <RevealWrapper origin={"right"} reset={true}>
               <h2 className="text-3xl font-bold text-heroblue text-center mb-6">
                 Program of Studies
               </h2>
