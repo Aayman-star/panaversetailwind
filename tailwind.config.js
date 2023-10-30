@@ -15,6 +15,7 @@ module.exports = {
       },
       colors: {
         heroblue: "#18143A",
+        brandred: "#EE1938",
       },
     },
   },

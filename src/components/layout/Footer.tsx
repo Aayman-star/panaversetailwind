@@ -75,7 +75,7 @@ const Footer = () => {
           <div className=" mt-10 md:col-span-2 grid grid-cols-1 place-content-baseline gap-y-6 md:grid-cols-3  justify-between">
             {/* Contacts div */}
             <div className=" flex flex-col gap-3 md:col-span-1">
-              <h4 className="font-semibold text-lg">Home</h4>
+              <h4 className="font-semibold text-xl">Home</h4>
               <ul>
                 {about.map((item, i) => (
                   <li key={i} className="mb-2">
@@ -86,20 +86,20 @@ const Footer = () => {
             </div>
             {/* Socials */}
             <div className=" flex flex-col  items-start   gap-y-4 md:col-span-1">
-              <h3 className="text-[#EE1938]  text-lg md:ml-8 font-semibold">
+              <h3 className="text-brandred  text-xl md:ml-10 font-semibold">
                 Follow Us
               </h3>
-              <ul className="flex items-center">
+              <ul className="flex items-center gap-x-2">
                 {socials.map((item, i) => (
-                  <li key={item.key} className="h-8 w-8 text-[#EE1938]">
+                  <li key={item.key} className="text-3xl text-brandred">
                     {item}
                   </li>
                 ))}
               </ul>
             </div>
             {/* Subscription */}
-            <div className="grid grid-cols-1 gap-y-3 justify-items-start md:col-span-1">
-              <h3 className="font-semibold text-[#EE1938]">Subscribe</h3>
+            <div className=" grid grid-cols-1 gap-y-3 justify-items-stretch md:col-span-1">
+              <h3 className="font-semibold text-brandred text-lg">Subscribe</h3>
               <div>
                 <input
                   className="w-full p-2 h-10 rounded-md border border-gray-500"
@@ -108,7 +108,7 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <button className="bg-[#EE1938] text-gray-50 px-3 py-2 rounded-md">
+                <button className="bg-brandred text-gray-50 px-3 py-2 rounded-md">
                   Subscribe
                 </button>
               </div>
