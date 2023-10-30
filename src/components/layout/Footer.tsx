@@ -78,7 +78,7 @@ const Footer = () => {
               <h4 className="font-semibold text-lg">Home</h4>
               <ul>
                 {about.map((item, i) => (
-                  <li key={i} className="mb-2">
+                  <li key={item} className="mb-2">
                     {item}
                   </li>
                 ))}
@@ -86,16 +86,16 @@ const Footer = () => {
             </div>
             {/* Socials */}
             <div className=" flex flex-col  items-start   gap-y-4 md:col-span-1">
-              <h3 className="text-[#EE1938]  text-lg md:ml-10 font-semibold">
+              <h3 className="text-[#EE1938]  text-lg md:ml-8 font-semibold">
                 Follow Us
               </h3>
-              {/* <ul className="flex items-center">
+              <ul className="flex items-center">
                 {socials.map((icon, i) => (
-                  <li key={i} className="h-8 w-8 text-[#EE1938]">
+                  <li key={icon} className="h-8 w-8 text-[#EE1938]">
                     {icon}
                   </li>
                 ))}
-              </ul> */}
+              </ul>
             </div>
             {/* Subscription */}
             <div className="grid grid-cols-1 gap-y-3 justify-items-start md:col-span-1">
