@@ -127,19 +127,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-{
-  /* Courses div */
-}
-{
-  /* <div className="flex flex-col gap-3">
-              <h4 className="font-semibold text-lg">Courses</h4>
-              <ul>
-                {courses.map((course, i) => (
-                  <li key={i} className="mb-2">
-                    {course}
-                  </li>
-                ))}
-              </ul>
-            </div> */
-}
