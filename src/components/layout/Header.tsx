@@ -31,6 +31,10 @@ const Header = () => {
               <li className="hover:scale-110">Home</li>
             </Link>
 
+            <Link href={"/"}>
+              <li className="hover:scale-110">About</li>
+            </Link>
+
             <Link href={"/courses"}>
               <li className="hover:scale-110">Courses</li>
             </Link>

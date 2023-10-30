@@ -85,8 +85,8 @@ const Footer = () => {
               </ul>
             </div>
             {/* Socials */}
-            <div className=" flex flex-col  items-start  gap-y-4 md:col-span-1">
-              <h3 className="text-[#EE1938] text-lg font-semibold">
+            <div className=" flex flex-col  items-start   gap-y-4 md:col-span-1">
+              <h3 className="text-[#EE1938]  text-lg md:ml-10 font-semibold">
                 Follow Us
               </h3>
               <ul className="flex items-center">
@@ -102,9 +102,9 @@ const Footer = () => {
               <h3 className="font-semibold text-[#EE1938]">Subscribe</h3>
               <div>
                 <input
-                  className="w-full h-10 rounded-md border border-gray-500"
+                  className="w-full p-2 h-10 rounded-md border border-gray-500"
                   type="text"
-                  placeholder="Subscribe"
+                  placeholder="Email Here"
                 />
               </div>
               <div>

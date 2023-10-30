@@ -17,7 +17,7 @@ const Hero = () => {
           <div className="flex-1 grow flex flex-col   bg-heroblue md:flex-1 md:grow text-slate-300">
             <RevealWrapper delay={100} duration={2000}>
               <div className="mt-10 ml-8 md:mt-20 md:ml-0 lg:mt-40">
-                <h4 className="text-sm font-light md:text-lg">
+                <h4 className="text-sm  font-normal md:text-lg">
                   Presidential Initiative for Artificial Intelligence and
                   Computing(PIAIC)
                 </h4>
@@ -31,8 +31,8 @@ const Hero = () => {
                 </p>
                 <RevealWrapper delay={1500} duration={1000}>
                   <div className="mt-4">
-                    <button className=" bg-heroblue px-8 py-4 md:px-10  rounded border-solid border-2 shadow-md">
-                      Join Today
+                    <button className=" px-8 py-4 md:px-10  rounded border-solid border-2  shadow-md">
+                      <p className="font-medium ">Join Today</p>
                     </button>
                   </div>
                 </RevealWrapper>

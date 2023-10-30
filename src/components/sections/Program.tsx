@@ -22,7 +22,7 @@ const Program = () => {
               <h2 className="text-3xl font-bold text-heroblue text-center mb-6">
                 Program of Studies
               </h2>
-              <p className="text-slate-800">
+              <p className="p-6 text-slate-800 text-base">
                 Panaverse has consolidated Web 3.0, Metaverse, Artificial
                 Intelligence (AI), Cloud, Edge, Ambient Computing/IoT, Network
                 Automation, and Bioinformatics Technologies.This will help you

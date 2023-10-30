@@ -17,7 +17,7 @@ const Intro = () => {
                 <h2 className="font-bold text-3xl text-heroblue">
                   What is Metaverse
                 </h2>
-                <p className="mx-2 text-slate-800">
+                <p className="p-6 text-slate-800 text-base">
                   The internet is without a doubt the most important
                   technological development in human history. Web3, 3D
                   Metaverse, AI, IoT, Cloud, and Edge technologies expand the
