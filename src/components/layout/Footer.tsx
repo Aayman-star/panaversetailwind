@@ -89,13 +89,13 @@ const Footer = () => {
               <h3 className="text-[#EE1938]  text-lg md:ml-10 font-semibold">
                 Follow Us
               </h3>
-              <ul className="flex items-center">
+              {/* <ul className="flex items-center">
                 {socials.map((icon, i) => (
                   <li key={i} className="h-8 w-8 text-[#EE1938]">
                     {icon}
                   </li>
                 ))}
-              </ul>
+              </ul> */}
             </div>
             {/* Subscription */}
             <div className="grid grid-cols-1 gap-y-3 justify-items-start md:col-span-1">
