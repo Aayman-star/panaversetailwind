@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Wrapper from "../shared/Wrapper";
 import Logo from "/public/logo.png";
 import Logo1 from "/public/logo-footer.png";
@@ -31,7 +32,11 @@ const Footer = () => {
     <FaGithubSquare key={4} />,
     <FaYoutubeSquare key={5} />,
   ];
-  const about: Array<string> = ["About", "Courses", "Contact"];
+  const about: Array<any> = [
+    { name: "About", link: "/#About" },
+    { name: "Courses", link: "/#Courses" },
+    { name: "Contact", link: "/#" },
+  ];
   return (
     <Wrapper>
       <section className="bg-heroblue p-2">
@@ -75,12 +80,18 @@ const Footer = () => {
           <div className=" mt-10 md:col-span-2 grid grid-cols-1 place-content-baseline gap-y-6 md:grid-cols-3  justify-between">
             {/* Contacts div */}
             <div className=" flex flex-col gap-3 md:col-span-1">
-              <h4 className="font-semibold text-xl">Home</h4>
+              <a href="/#Home">
+                {" "}
+                <h4 className="font-semibold text-xl">Home</h4>
+              </a>
+
               <ul>
                 {about.map((item, i) => (
-                  <li key={i} className="mb-2">
-                    {item}
-                  </li>
+                  <a href={item.link}>
+                    <li key={i} className="mb-2">
+                      {item.name}
+                    </li>
+                  </a>
                 ))}
               </ul>
             </div>

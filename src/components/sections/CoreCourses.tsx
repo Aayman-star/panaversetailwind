@@ -14,7 +14,7 @@ import { RevealList } from "next-reveal";
 const CoreCourses = () => {
   return (
     <Wrapper>
-      <section className="max-w-7xl mx-auto p-2 font-Poppins">
+      <section id="Courses" className="max-w-7xl mx-auto p-2 font-Poppins">
         <Card className="border-none text-center">
           <CardHeader>
             <CardTitle className="font-semibold text-slate-800">

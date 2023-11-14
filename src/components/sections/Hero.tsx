@@ -3,10 +3,11 @@ import Wrapper from "../shared/Wrapper";
 import Image from "next/image";
 import heroimage from "/public/hero-image.png";
 import { RevealWrapper } from "next-reveal";
+import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section>
+    <section id="Home">
       <Wrapper>
         <div className="w-full bg-heroblue flex flex-col-reverse  items-stretch md:flex-row justify-center">
           {/* Left Side of the Hero section */}
@@ -32,7 +33,11 @@ const Hero = () => {
                 <RevealWrapper delay={1500} duration={1000}>
                   <div className="mt-4">
                     <button className=" px-8 py-4 md:px-10  rounded border-solid border-2  shadow-lg">
-                      <p className="font-medium ">Join Today</p>
+                      <Link
+                        href="https://portal.piaic.org/signup"
+                        target="_blank">
+                        <p className="font-medium ">Join Today</p>
+                      </Link>
                     </button>
                   </div>
                 </RevealWrapper>

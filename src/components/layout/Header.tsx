@@ -31,13 +31,13 @@ const Header = () => {
               <li className="hover:scale-110">Home</li>
             </Link>
 
-            <Link href={"/"}>
+            <a href="/#About">
               <li className="hover:scale-110">About</li>
-            </Link>
+            </a>
 
-            <Link href={"/courses"}>
+            <a href="/#Courses">
               <li className="hover:scale-110">Courses</li>
-            </Link>
+            </a>
           </ul>
         </header>
       </div>

@@ -8,7 +8,7 @@ const Intro = () => {
   return (
     <Wrapper>
       {/* Main div housing the image and the text */}
-      <section className="max-w-7xl mx-auto">
+      <section className="max-w-7xl mx-auto" id="About">
         <div className="p-2 flex flex-col md:p-0 md:flex-row justify-between">
           {/* Text will bw placed in this div */}
           <div className="flex-1 font-Poppins py-6">
