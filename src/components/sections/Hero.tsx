@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section id="Home">
+    <section>
       <Wrapper>
         <div className="w-full bg-heroblue flex flex-col-reverse  items-stretch md:flex-row justify-center">
           {/* Left Side of the Hero section */}
